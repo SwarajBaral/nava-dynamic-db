@@ -10,16 +10,16 @@ To start the server, follow these steps:
 
 2. **Set up environment variables**:
     Create a `.env` file in the root directory and add the necessary environment variables. For example:
-        ```env
-        MASTER_DB_URL=postgresql+asyncpg://admin:adminpass@db:5432/master_db
-        DB_HOST=db
-        DB_USER=admin
-        DB_PASSWORD=adminpass
-        POSTGRES_USER=admin
-        POSTGRES_PASSWORD=adminpass
-        POSTGRES_DB=master_db
-        POSTGRES_PORT=5432
-        ```
+    ```env
+    MASTER_DB_URL=postgresql+asyncpg://admin:adminpass@db:5432/master_db
+    DB_HOST=db
+    DB_USER=admin
+    DB_PASSWORD=adminpass
+    POSTGRES_USER=admin
+    POSTGRES_PASSWORD=adminpass
+    POSTGRES_DB=master_db
+    POSTGRES_PORT=5432
+    ```
 
 3. **Start the server using Docker Compose**:
     ```sh
