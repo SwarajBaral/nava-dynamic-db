@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "7ff32ff0-3fb3-41ec-93cc-22e571c63dbc",
+		"name": "nava",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29064653"
+	},
+	"item": [
+		{
+			"name": "Create org",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"org8@gmail.com\",\n    \"password\": \"Pass@1234\",\n    \"organization_name\": \"Organization eight\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6800/org/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6800",
+					"path": [
+						"org",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6800/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6800",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get org",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"organization_name\": \"Organization eight\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6800/org/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6800",
+					"path": [
+						"org",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
